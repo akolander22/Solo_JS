@@ -14,7 +14,10 @@ console.log(numList[numList.length-1]);
 
 
 //step 3
-console.log(numList.join(''));
+for (var i = 0; i < numList.length; i++ ) {
+  i = numList.join('');
+  console.log(i);
+};
 //step 4
 var sum = 0;
 for(var i = 0; i < numList.length; i++) {
@@ -36,6 +39,6 @@ for(var i = 0; i < boolList.length; i++){
 }
 //step 7
 
-var combinedArray = stringList.concat(numList, boolList);
+var combined = stringList.concat(numList, boolList);
 
-console.log(combinedArray.reverse());
+console.log(combined.reverse());
